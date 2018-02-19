@@ -9,13 +9,13 @@
 
 	<name>demo</name>
 	<url>http://maven.apache.org</url>
-	
-	  <distributionManagement>
-        <repository>
-            <id>nexus-site</id>
-            <url>http://central_nexus/server</url>
-        </repository>
-    </distributionManagement>
+
+	<distributionManagement>
+		<repository>
+			<id>maven-repository</id>
+			<url>${github.maven.repository}</url>
+		</repository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
@@ -85,7 +85,7 @@
 			<version>RELEASE</version>
 		</dependency>
 
-		 
+
 	</dependencies>
 
 
