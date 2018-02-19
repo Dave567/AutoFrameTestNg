@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Suite" parallel="tests">
+   <test name="FirstTest" thread-count="5" parallel="methods" >
+    <parameter name="browser" value="chrome"/>
+  			<classes>
+			<class name="zoosite.runner.SmokeTest"/>
+		</classes>
+  </test> <!--SmokeTest -->
+   <test name="SecondTest" thread-count="5" parallel="methods" >
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            	<class name="zoosite.runner.FunctionTest"/>
+        </classes>
+    </test> <!-- Functional Test --> 
+    
+     <test name="ThirdTest" thread-count="1" parallel="methods" >
+        <parameter name="browser" value="internet explorer"/>
+        <classes>
+            	<class name="zoosite.runner.RegressionTest"/>
+        </classes>
+    </test> <!-- Functional Test --> 
+  
+</suite> <!-- Suite -->
+    
+   

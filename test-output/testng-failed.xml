@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="3" name="ThirdTest(failed)" parallel="methods">
+    <parameter name="browser" value="internet explorer"/>
+    <classes>
+      <class name="zoosite.runner.RegressionTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="setupTest"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="getDriver"/>
+        </methods>
+      </class> <!-- zoosite.runner.RegressionTest -->
+    </classes>
+  </test> <!-- ThirdTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

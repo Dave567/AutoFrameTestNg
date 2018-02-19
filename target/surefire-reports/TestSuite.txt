@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 24.644 s <<< FAILURE! - in TestSuite
+setupTest(zoosite.runner.RegressionTest)  Time elapsed: 1.813 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Error forwarding the new session cannot find : Capabilities [{browserName=ie}]
+Command duration or timeout: 109 milliseconds
+Caused by: org.openqa.selenium.WebDriverException: 
+Error forwarding the new session cannot find : Capabilities [{browserName=ie}]
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'DEV', ip: '192.168.0.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_65'
+Driver info: driver.version: unknown
+
