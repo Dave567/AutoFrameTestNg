@@ -14,12 +14,12 @@
         </classes>
     </test> <!-- Functional Test --> 
     
-     <test name="ThirdTest" thread-count="1" parallel="methods" >
+    <!--  <test name="ThirdTest" thread-count="1" parallel="methods" >
         <parameter name="browser" value="internet explorer"/>
         <classes>
             	<class name="zoosite.runner.RegressionTest"/>
         </classes>
-    </test> <!-- Functional Test --> 
+    </test> Functional Test --> 
   
 </suite> <!-- Suite -->
     
